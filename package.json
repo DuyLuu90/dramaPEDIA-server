@@ -1,0 +1,46 @@
+{
+  "name": "dramapedia-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require test/setup.js",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate",
+    "migrate:production": "env SSL=true DATABASE_URL='postgres://rvrdulubeggugp:cfb6de66a1470393fd61158a956ab2d6a028803e2544f2e6717edb5d712c2f76@ec2-35-173-94-156.compute-1.amazonaws.com:5432/d6ou4fa2idmlr6' npm run migrate",
+    "deploy": "git push heroku master"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "12.18.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.0",
+    "treeize": "^2.1.2",
+    "uuid": "^8.2.0",
+    "uuidv4": "^6.1.1",
+    "valid-url": "^1.0.9",
+    "winston": "^3.3.3",
+    "postgrator-cli": "^4.0.0",
+    "xss": "^1.0.7"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.4",
+    "postgrator-cli": "^4.0.0",
+    "supertest": "^4.0.2"
+  }
+}
