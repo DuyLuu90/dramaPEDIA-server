@@ -28,19 +28,19 @@
     "knex": "^0.21.2",
     "morgan": "^1.10.0",
     "pg": "^8.3.0",
+    "postgrator": "^4.0.1",
+    "postgrator-cli": "^4.0.0",
     "treeize": "^2.1.2",
     "uuid": "^8.2.0",
     "uuidv4": "^6.1.1",
     "valid-url": "^1.0.9",
     "winston": "^3.3.3",
-    "postgrator-cli": "^4.0.0",
     "xss": "^1.0.7"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.1.2",
     "nodemon": "^2.0.4",
-    "postgrator-cli": "^4.0.0",
     "supertest": "^4.0.2"
   }
 }
